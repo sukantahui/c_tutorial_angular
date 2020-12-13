@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+
+<!--Header-->
+<div fxLayout="column" fxFlexFill fxLayoutAlign="space-between stretch" class="bg-red">
+  <div fxFlex="1" fxLayout="column" flexLayoutAlign="center center">
+    <app-header [deviceXs]="deviceXs"></app-header>
+  </div>
+<!--  This is our main working area-->
+  <div fxFlex="1"  fxLayout="column" flexLayoutAlign="center center"  style="margin-top: 70px; min-height: 80vh">
+    <router-outlet></router-outlet>
+  </div>
+
+<!--  Footer-->
+  <div fxFlexFill fxLayoutAlign="start end" class="bottom-div" style="background-color: #f8f6f6">
+    Metal Project by coder
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
