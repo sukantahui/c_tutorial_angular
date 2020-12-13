@@ -13,7 +13,35 @@
   </div>
 <!--  This is our main working area-->
   <div fxFlex="1"  fxLayout="column" flexLayoutAlign="center center"  style="margin-top: 70px; min-height: 80vh">
-    <router-outlet></router-outlet>
+    <div fxLayout="row" fxLayoutAlign="space-around center" >
+      <div  id="left-div" fxFlex="15">
+        <h3>C Programming Tutorial</h3>
+        <ul>
+          <li><a [routerLink]="['/turbocpp']"
+            routerLinkActive="MyActiveMenu">Turbo C++</a></li>
+          <li>First C Program</li>
+          <li>C - Keywords</li>
+          <li>Operator precedence</li>
+          <li>C - if statement</li>
+          <li>C - if..else</li>
+          <li>C - for loop</li>
+          <li>C - while loop</li>
+          <li>C - do while loop</li>
+          <li>C - continue</li>
+          <li>C - break statement</li>
+          <li>C - switch..case</li>
+          <li>C - goto statement</li>
+          <li>C - Arrays</li>
+          
+        </ul>
+      </div>
+      <div class="" id="middle-div" fxFlex="65">
+    
+        <router-outlet></router-outlet>
+
+      </div>
+      <div class="" id="right-div" fxFlex="20">jhgjyjytj</div>
+    </div>
   </div>
 
 <!--  Footer-->

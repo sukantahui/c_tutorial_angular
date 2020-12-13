@@ -17,11 +17,13 @@ import {CashBookHomeComponent} from "./pages/cash-book/cash-book-home/cash-book-
 import {ProductComponent} from "./pages/product/product.component";
 import {CustomerComponent} from "./pages/customer/customer.component";
 import {VendorComponent} from "./pages/vendor/vendor.component";
+import { TurboCppComponent } from './pages/turbo-cpp/turbo-cpp.component';
 
 
 // @ts-ignore
 const routes: Routes = [
   {path: '', component: HomeComponent},
+  {path: 'turbocpp',component: TurboCppComponent},
   {path: 'auth', component: AuthComponent},
   {path: 'owner', canActivate:  [AuthGuardService], component: OwnerComponent},
   {path: 'ledger', canActivate:  [AuthGuardService], component: LedgerComponent},
