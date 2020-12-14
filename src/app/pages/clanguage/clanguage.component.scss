@@ -1,0 +1,13 @@
+@import "../../../main.scss";
+
+
+
+
+:host{
+  @include linear-gradient(to bottom, white 0%, #d6bc9e 50%, #e8af0a 100%);
+}
+
+ul{
+  list-style: none;
+}
+

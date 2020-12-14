@@ -57,41 +57,20 @@ body{
   min-height: 100%;
   width: 100%;
   background-color: antiquewhite;
-  @include linear-gradient(to bottom, $color-black-68 0%, rgba(14, 29, 96, 0.74) 50%, #e8b10a 100%);
+  @include linear-gradient(to bottom, $color-black-68 0%, rgba(213, 213, 218, 0.74) 50%, #e6e3dc 100%);
   //background-image: url("assets/background/zhilkooleg-C5ayHUXMMX8-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 .layer{
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(136, 132, 132, 0.8);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   min-height: 100%;
 }
-
-//#outer-div{
-//  display: flex;
-//}
-//#main-div{
-//  min-height: 93vh;
-//  background-color: cornflowerblue;
-//  //background-image: linear-gradient(hotpink, tomato);
-//  @include linear-gradient(to bottom, $color-red 0%, #e8dd18 50%, #e8dd18 100%);
-//}
-
-//mat-sidenav{
-//  min-height: 94vh;
-//  width: 10vw;
-//  @include linear-gradient(to bottom, $base-color 0%, $base-color 50%, $base-color 100%);
-//}
-//mat-sidenav-content{
-//  min-height: 94vh;
-//  padding-left: 10px;
-//  @include linear-gradient(to bottom, $color-yellow-1 0%, $color-yellow-2 50%, $color-yellow-3 100%);
-//}
 
 
 .navbar {
