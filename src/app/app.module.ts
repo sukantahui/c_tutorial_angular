@@ -39,7 +39,7 @@ import {ShowHidePasswordModule} from 'ngx-show-hide-password';
 import { CLanguageComponent } from './pages/clanguage/clanguage.component';
 import { TurboCppComponent } from './pages/clanguage/topics/turbo-cpp/turbo-cpp.component';
 import { ClanguageHomeComponent } from './pages/clanguage/topics/clanguage-home/clanguage-home.component';
-
+import { NgxWatermarkModule } from 'ngx-watermark';
 
 
 @NgModule({
@@ -77,7 +77,8 @@ import { ClanguageHomeComponent } from './pages/clanguage/topics/clanguage-home/
         Ng2SearchPipeModule,
         NgxPaginationModule,
         NgSelectModule,
-        ShowHidePasswordModule
+        ShowHidePasswordModule,
+        NgxWatermarkModule
     ],
   providers: [{provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorInterceptor, multi: true},
               {provide: DateAdapter, useClass: DateFormat} ],
