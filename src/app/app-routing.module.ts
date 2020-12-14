@@ -8,6 +8,8 @@ import {VendorComponent} from "./pages/vendor/vendor.component";
 import { CLanguageComponent } from './pages/clanguage/clanguage.component';
 import { TurboCppComponent } from './pages/clanguage/topics/turbo-cpp/turbo-cpp.component';
 import { ClanguageHomeComponent } from './pages/clanguage/topics/clanguage-home/clanguage-home.component';
+import { FirstCProgrammingComponent } from './pages/clanguage/topics/first-cprogramming/first-cprogramming.component';
+import { CKeywordsComponent } from './pages/clanguage/topics/ckeywords/ckeywords.component';
 
 
 // @ts-ignore
@@ -16,7 +18,10 @@ const routes: Routes = [
   {path: 'clanguage',component: CLanguageComponent,
       children: [
         {path: '', component: ClanguageHomeComponent, pathMatch: 'full'},
-        {path: 'turbocpp', component: TurboCppComponent}
+        {path: 'turbocpp', component: TurboCppComponent},
+        {path: 'first-c-program', component: FirstCProgrammingComponent},
+        {path: 'c-keywords', component: CKeywordsComponent}
+
       ]
   }
 ];

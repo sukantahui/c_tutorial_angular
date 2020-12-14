@@ -40,6 +40,8 @@ import { CLanguageComponent } from './pages/clanguage/clanguage.component';
 import { TurboCppComponent } from './pages/clanguage/topics/turbo-cpp/turbo-cpp.component';
 import { ClanguageHomeComponent } from './pages/clanguage/topics/clanguage-home/clanguage-home.component';
 import { NgxWatermarkModule } from 'ngx-watermark';
+import { FirstCProgrammingComponent } from './pages/clanguage/topics/first-cprogramming/first-cprogramming.component';
+import { CKeywordsComponent } from './pages/clanguage/topics/ckeywords/ckeywords.component';
 
 
 @NgModule({
@@ -60,6 +62,8 @@ import { NgxWatermarkModule } from 'ngx-watermark';
     CLanguageComponent,
     TurboCppComponent,
     ClanguageHomeComponent,
+    FirstCProgrammingComponent,
+    CKeywordsComponent,
   ],
     imports: [
         BrowserModule,
