@@ -21,7 +21,7 @@
             
           printf("hello World!");
             return 0;
-            
+
           {{ '}' }} 
       
         </pre>
@@ -31,27 +31,36 @@
       
          <h3><p> We have seen the steps to compile and execute a C program using Turbo C++. We can also do the same using gcc compiler. The steps are as follows:</p></h3>
         <h2><b>Source code Helloworld.c (file should always be saved with .c extension)</b></h2>
-        <pre>
-          #include< stdio.h >
-          int main(  )
-          {{ '{' }}
-            
-          puts ("hello World!");
-            return 0;
-            
-          {{ '}' }} 
-      
-        </pre>
         <div id="div1">
           <pre>
             #include< stdio.h >
-              int main()
-              {{ '{' }}
-                puts ("hello World");
-                return 0;
-              {{ '}' }}
+            int main(  )
+            {{ '{' }}
+              
+            puts ("hello World!");
+              return 0;
+              
+            {{ '}' }} 
           </pre>
         </div>
+        <h3><b>Compile it</b> (it is basically converting a helloworld.c file to a helloworld file)</h3>
+        <div id="div2">
+          >gcc  helloworld.c  –o  helloworld<br>
+          >
+        </div>
+        The generated file would be helloworld.exe if you are compiling on windows.
+        
+          <h3><b>Run the compiled program</b></h3>
+         <p> Once you give the above command, a .exe file would have been created if you are on windows then type the following command to run the source code.
+        </p>
+        <h3><b>For Windows</b></h3>
+        >helloworld
+        <h3><b>For Mac and Linux OS</b></h3>
+        >./helloworld
+        <p>gcc compiler took the human readable format (helloworld.c file) and converted into a machine code for Windows, Linux and Mac OS X.</p>
+
+
+
       
   </div>
 </section>
