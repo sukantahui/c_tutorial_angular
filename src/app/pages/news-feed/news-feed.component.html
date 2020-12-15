@@ -7,5 +7,7 @@
 </h2>
 Total Item: {{RssData?.rss.channel[0].item.length}}
 <ul>
-  <li *ngFor="let o of RssData?.rss.channel[0].item"><a href="{{o.link[0]}}">{{o.title[0]}}</a></li>
+  <li *ngFor="let o of RssData?.rss.channel[0].item">
+    <a target="_blank" href="{{o.link[0]}}">{{o.title[0]}}</a>
+  </li>
 </ul>

@@ -15,7 +15,7 @@ import { CKeywordsComponent } from './pages/clanguage/topics/ckeywords/ckeywords
 // @ts-ignore
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'clanguage',component: CLanguageComponent,
+  {path: 'clanguage', component: CLanguageComponent,
       children: [
         {path: '', component: ClanguageHomeComponent, pathMatch: 'full'},
         {path: 'turbocpp', component: TurboCppComponent},
@@ -23,9 +23,9 @@ const routes: Routes = [
         {path: 'c-keywords', component: CKeywordsComponent}
 
       ]
-  
+
   },
-  {path: 'first-c-program>' ,component: FirstCProgrammingComponent}
+  {path: 'first-c-program', component: FirstCProgrammingComponent}
 ];
 
 @NgModule({

@@ -1,1 +1,43 @@
-<p>first-cprogramming works!</p>
+<h1><b>C Program Structure – First C Program</b></h1>
+<p>BY CHAITANYA SINGH | FILED UNDER: <a target="_blank" href="https://beginnersbook.com/category/c-programming/">C-PROGRAMMING</a></p>
+<p>A C program source code can be written in any text editor; however the file should be saved with .c extension. Lets write the First C program.</p>
+<h1><b>First C Program</b></h1>
+<div id="first-c">
+  <pre>
+    /* Demo Program written by Chaitanya on BeginnersBook.com*/
+    #include< stdio.h >
+    int main()
+    {{'{'}}
+        int num;
+        printf("Enter your age: ");
+        scanf("%d", &num);
+        if (num <18)
+        {{'{'}}
+            printf("you are not eligible for voting");
+        {{'}'}}
+        else
+        {{'{'}}
+            printf("You can vote!!");
+        {{'}'}}
+        return 0;
+    {{'}'}}
+  </pre>
+</div>
+<h3><b>Output:</b></h3>
+<div>
+  <pre>
+    Enter your age:25
+    You can vote!!
+  </pre>
+</div>
+<h2><b>Lets understand this Program:</b></h2>
+<p>Comment: Comment start with’ /*’ and end with ‘*/’. Comments are not mandatory but still it’s a good practice if you use them, it improves the readability of the code. A program can have any number of comments.</p>
+<p>Include section: While writing program we use several keywords & statements and functions such as printf(), scanf() etc. The file that has definitions of these functions needs to be included in the program. In the above program we have used stdio.h.There are several libraries and “stdio.h” is one of them, which is used for reading the data from terminal and to display the data on terminal.</p>
+<p>Display statements: printf function is used in couple of places in the above code. Whatever you gives inside double quotes, it prints as it is at the console. You can also use format specifiers such as %d, %c, %p to display the values of the variables and pointers using printf.</p>
+<p>Take input from the user: scanf function is used to take the input from the user. When you run this program, it waits for a user input (age) and once user enters the age, it does the processing of rest of the statements based on the age input by user.</p>
+<p>Main() function: It is the starting point of all the C programs. The execution of C source code begins with this function.</p>
+<h1><p>More about main () Function in C program</p></h1>
+<p>The main () function should be present in all C programs as your program won’t begin without this function.</p>
+<p>Return type of main () function: The return type for main () function should always be int.</p>
+<p>Why it has a return type and what’s the need of it? The compiler should know whether your program compiled successfully or it has failed. In order to know this it checks the return value of function main (). If return value is 0 then it means that the program is successful otherwise it assumes that there is a problem, this is why we have a return 0 statement at the end of the main function.</p>
+<p>Structure of main function: Function name is followed by return type. There should be close parenthesis after function name. If there are parameters or arguments then it must be within this parenthesis. The block of code inside braces is function body. We will discuss more about functions</p>
