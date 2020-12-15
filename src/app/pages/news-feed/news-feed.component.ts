@@ -13,14 +13,27 @@ export class NewsFeedComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    const requestOptions: Object = {
+      observe: 'body',
+      responseType: 'text'
+    };
+    this.http
+      .get<any>('https://gadgets.ndtv.com/rss/feeds', requestOptions)
+      .subscribe(data => {
+        const parseString = xml2js.parseString;
+        console.log(parseString);
+        parseString(data, (err, result: NewsRss) => {
+          this.RssData = result;
+        });
+      });
   }
   GetRssFeedData() {
     const requestOptions: Object = {
-      observe: "body",
-      responseType: "text"
+      observe: 'body',
+      responseType: 'text'
     };
     this.http
-      .get<any>("https://gadgets.ndtv.com/rss/feeds", requestOptions)
+      .get<any>('https://gadgets.ndtv.com/rss/feeds', requestOptions)
       .subscribe(data => {
         const parseString = xml2js.parseString;
         console.log(parseString);
