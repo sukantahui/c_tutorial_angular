@@ -22,7 +22,6 @@ import { PictureCarouselComponent } from './pages/home/picture-carousel/picture-
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { AuthComponent } from './pages/auth/auth.component';
 import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
-import {AuthInterceptorInterceptor} from './services/auth-interceptor.interceptor';
 import {NgxPrintModule} from 'ngx-print';
 import {Ng2SearchPipeModule} from 'ng2-search-filter';
 import {NgxPaginationModule} from 'ngx-pagination';
@@ -45,6 +44,7 @@ import { CKeywordsComponent } from './pages/clanguage/topics/ckeywords/ckeywords
 import {TooltipModule} from 'ng2-tooltip-directive';
 import {PopoverModule} from 'ngx-smart-popover';
 import {NgMarqueeModule} from 'ng-marquee';
+import { NewsFeedComponent } from './pages/news-feed/news-feed.component';
 
 
 @NgModule({
@@ -67,6 +67,7 @@ import {NgMarqueeModule} from 'ng-marquee';
     ClanguageHomeComponent,
     FirstCProgrammingComponent,
     CKeywordsComponent,
+    NewsFeedComponent,
   ],
   imports: [
     BrowserModule,
@@ -90,8 +91,7 @@ import {NgMarqueeModule} from 'ng-marquee';
     PopoverModule,
     NgMarqueeModule
   ],
-  providers: [{provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorInterceptor, multi: true},
-              {provide: DateAdapter, useClass: DateFormat} ],
+  providers: [{provide: DateAdapter, useClass: DateFormat} ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
