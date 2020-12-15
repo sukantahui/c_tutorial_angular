@@ -1,4 +1,3 @@
-@import "~src/styling/variables";
 section{
   padding: 10px;
 }
@@ -9,16 +8,20 @@ section{
   width: 800px;
 }
 #div1{
-  background-color: gainsboro;
+
+  background: linear-gradient(42deg, #B58234 0%, #D2B545 50%, #D7C04D 50.01%, #FFFFFF 100%);
   font-weight: bold;
   border-radius: 5px;
 }
 #div2{
-  background-color: $orange;
+  background: linear-gradient(42deg, #B58234 0%, #D2B545 50%, #D7C04D 50.01%, #FFFFFF 100%);
   font-weight: bold;
   padding-top: 10px;
 
 
 }
+
+
+
 
 
