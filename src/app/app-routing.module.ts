@@ -23,7 +23,9 @@ const routes: Routes = [
         {path: 'c-keywords', component: CKeywordsComponent}
 
       ]
-  }
+  
+  },
+  {path: 'first-c-program>' ,component: FirstCProgrammingComponent}
 ];
 
 @NgModule({
