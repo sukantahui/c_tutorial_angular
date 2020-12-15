@@ -1,4 +1,4 @@
-
+@import "~src/styling/variables";
 section{
   padding: 10px;
 }
@@ -14,7 +14,7 @@ section{
   border-radius: 5px;
 }
 #div2{
-  background-color: gainsboro;
+  background-color: $orange;
   font-weight: bold;
   padding-top: 10px;
 

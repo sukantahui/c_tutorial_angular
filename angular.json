@@ -25,7 +25,8 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/styling/variables.scss"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
@@ -127,7 +128,7 @@
       }
     }
   },
-  "defaultProject": "base-project",
+  "defaultProject": "tutorial",
   "cli": {
     "analytics": "cfaa73ef-8b29-4bff-b212-a8c702d99a27"
   }

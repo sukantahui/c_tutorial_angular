@@ -1,2 +1,84 @@
 $lightslategray: #778899;
 $darkgray: #A9A9A9;
+
+$color-red: rgba(232, 87, 4, 0.82);
+$color-yellow-1: #e89e05;
+$color-yellow-2: #e8c50e;
+$color-yellow-3: #dce815;
+$base-color: #c6538c;
+$color-black-68: #dea110;
+
+
+@mixin linear-gradient($direction, $color-stops...) {
+  // Direction has been omitted and happens to be a color-stop
+  @if is-direction($direction) == false {
+    $color-stops: $direction, $color-stops;
+    $direction: 180deg;
+  }
+
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+
+@function is-direction($value) {
+  $is-keyword: index((to top, to top right, to right top, to right, to bottom right, to right bottom, to bottom, to bottom left, to left bottom, to left, to left top, to top left), $value);
+  $is-angle: type-of($value) == 'number' and index('deg' 'grad' 'turn' 'rad', unit($value));
+
+  @return $is-keyword or $is-angle;
+}
+
+@function legacy-direction($value) {
+  @if is-direction($value) == false {
+    @error "Cannot convert `#{$value}` to legacy syntax because it doesn't seem to be a direction.";
+  }
+
+  $conversion-map: (
+    to top          : bottom,
+    to top right    : bottom left,
+    to right top    : left bottom,
+    to right        : left,
+    to bottom right : top left,
+    to right bottom : left top,
+    to bottom       : top,
+    to bottom left  : top right,
+    to left bottom  : right top,
+    to left         : right,
+    to left top     : right bottom,
+    to top left     : bottom right
+  );
+
+  @if map-has-key($conversion-map, $value) {
+    @return map-get($conversion-map, $value);
+  }
+
+  @return 90deg - $value;
+}
+
+
+
+/* COLOR VARIABLES
+============================================= */
+$orange: #ffad9d;
+$blue: #82d2e5;
+$green:#c1d72e;
+
+
+/* GRADIENT LISTS
+============================================= */
+
+$list1: $blue, $green, $orange;
+
+$list2: $blue 0%,$blue 33%,$green 33%,$green 66%, $orange 66%, $orange 100%;
+
+$list3: $blue 0%,$blue 10%,$green 25%,$green 39%,$orange 79%,$orange 100%;
+
+$list4: $blue, $green, $orange, $blue, $green, $orange, $blue, $green, $orange;
+
+@mixin gradient($direction, $list) {
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);
+}
+
