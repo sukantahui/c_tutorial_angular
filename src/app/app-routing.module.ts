@@ -25,7 +25,9 @@ const routes: Routes = [
       ]
 
   },
-  {path: 'first-c-program', component: FirstCProgrammingComponent}
+  {path: 'first-c-program', component: FirstCProgrammingComponent},
+  {path: 'c-keywords', component: CKeywordsComponent},
+  {path: 'turbocpp', component: TurboCppComponent}
 ];
 
 @NgModule({
