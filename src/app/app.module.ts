@@ -43,6 +43,7 @@ import { NgxWatermarkModule } from 'ngx-watermark';
 import { FirstCProgrammingComponent } from './pages/clanguage/topics/first-cprogramming/first-cprogramming.component';
 import { CKeywordsComponent } from './pages/clanguage/topics/ckeywords/ckeywords.component';
 import {TooltipModule} from 'ng2-tooltip-directive';
+import {PopoverModule} from 'ngx-smart-popover';
 
 
 @NgModule({
@@ -84,7 +85,8 @@ import {TooltipModule} from 'ng2-tooltip-directive';
     NgSelectModule,
     ShowHidePasswordModule,
     NgxWatermarkModule,
-    TooltipModule
+    TooltipModule,
+    PopoverModule
   ],
   providers: [{provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorInterceptor, multi: true},
               {provide: DateAdapter, useClass: DateFormat} ],
