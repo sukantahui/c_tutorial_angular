@@ -44,6 +44,7 @@ import { FirstCProgrammingComponent } from './pages/clanguage/topics/first-cprog
 import { CKeywordsComponent } from './pages/clanguage/topics/ckeywords/ckeywords.component';
 import {TooltipModule} from 'ng2-tooltip-directive';
 import {PopoverModule} from 'ngx-smart-popover';
+import {NgMarqueeModule} from 'ng-marquee';
 
 
 @NgModule({
@@ -86,7 +87,8 @@ import {PopoverModule} from 'ngx-smart-popover';
     ShowHidePasswordModule,
     NgxWatermarkModule,
     TooltipModule,
-    PopoverModule
+    PopoverModule,
+    NgMarqueeModule
   ],
   providers: [{provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorInterceptor, multi: true},
               {provide: DateAdapter, useClass: DateFormat} ],
