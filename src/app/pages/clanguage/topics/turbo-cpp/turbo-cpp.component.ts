@@ -8,12 +8,12 @@ import { NgxWatermarkOptions  } from 'ngx-watermark';
 export class TurboCppComponent implements OnInit {
 
   options: NgxWatermarkOptions = {
-    text: 'My Bouma is Best\nSimple & Charming\nLife is great',
+    text: 'CODER\nSimple & Charming\nLife is great',
     width: 350,
     height: 300,
     fontFamily: 'Kanit',
     color: '#999',
-    alpha: 0.7,
+    alpha: 0.4,
     degree: -45,
     fontSize: '20px',
 };
