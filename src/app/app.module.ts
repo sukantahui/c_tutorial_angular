@@ -42,6 +42,7 @@ import { ClanguageHomeComponent } from './pages/clanguage/topics/clanguage-home/
 import { NgxWatermarkModule } from 'ngx-watermark';
 import { FirstCProgrammingComponent } from './pages/clanguage/topics/first-cprogramming/first-cprogramming.component';
 import { CKeywordsComponent } from './pages/clanguage/topics/ckeywords/ckeywords.component';
+import {TooltipModule} from 'ng2-tooltip-directive';
 
 
 @NgModule({
@@ -65,25 +66,26 @@ import { CKeywordsComponent } from './pages/clanguage/topics/ckeywords/ckeywords
     FirstCProgrammingComponent,
     CKeywordsComponent,
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        NgbModule,
-        FormsModule,
-        BrowserAnimationsModule,
-        FontAwesomeModule,
-        MaterialModule,
-        FlexLayoutModule,
-        FormsModule,
-        ReactiveFormsModule,
-        HttpClientModule,
-        NgxPrintModule,
-        Ng2SearchPipeModule,
-        NgxPaginationModule,
-        NgSelectModule,
-        ShowHidePasswordModule,
-        NgxWatermarkModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    FontAwesomeModule,
+    MaterialModule,
+    FlexLayoutModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    NgxPrintModule,
+    Ng2SearchPipeModule,
+    NgxPaginationModule,
+    NgSelectModule,
+    ShowHidePasswordModule,
+    NgxWatermarkModule,
+    TooltipModule
+  ],
   providers: [{provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorInterceptor, multi: true},
               {provide: DateAdapter, useClass: DateFormat} ],
   bootstrap: [AppComponent]
