@@ -45,6 +45,7 @@ import {TooltipModule} from 'ng2-tooltip-directive';
 import {PopoverModule} from 'ngx-smart-popover';
 import {NgMarqueeModule} from 'ng-marquee';
 import { NewsFeedComponent } from './pages/news-feed/news-feed.component';
+import { OperatorPrecedenceComponent } from './pages/clanguange/topics/operator-precedence/operator-precedence.component';
 
 
 @NgModule({
@@ -68,6 +69,7 @@ import { NewsFeedComponent } from './pages/news-feed/news-feed.component';
     FirstCProgrammingComponent,
     CKeywordsComponent,
     NewsFeedComponent,
+    OperatorPrecedenceComponent,
   ],
   imports: [
     BrowserModule,
