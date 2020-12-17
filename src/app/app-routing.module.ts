@@ -10,6 +10,7 @@ import { TurboCppComponent } from './pages/clanguage/topics/turbo-cpp/turbo-cpp.
 import { ClanguageHomeComponent } from './pages/clanguage/topics/clanguage-home/clanguage-home.component';
 import { FirstCProgrammingComponent } from './pages/clanguage/topics/first-cprogramming/first-cprogramming.component';
 import { CKeywordsComponent } from './pages/clanguage/topics/ckeywords/ckeywords.component';
+import { OperatorPrecidenceComponent } from './pages/clanguage/topics/operator-precidence/operator-precidence.component';
 
 
 // @ts-ignore
@@ -20,7 +21,8 @@ const routes: Routes = [
         {path: '', component: ClanguageHomeComponent, pathMatch: 'full'},
         {path: 'turbocpp', component: TurboCppComponent},
         {path: 'first-c-program', component: FirstCProgrammingComponent},
-        {path: 'c-keywords', component: CKeywordsComponent}
+        {path: 'c-keywords', component: CKeywordsComponent},
+        {path: 'operator-precidence', component: OperatorPrecidenceComponent}
 
       ]
 

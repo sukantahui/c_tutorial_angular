@@ -46,6 +46,7 @@ import {PopoverModule} from 'ngx-smart-popover';
 import {NgMarqueeModule} from 'ng-marquee';
 import { NewsFeedComponent } from './pages/news-feed/news-feed.component';
 import { OperatorPrecedenceComponent } from './pages/clanguange/topics/operator-precedence/operator-precedence.component';
+import { OperatorPrecidenceComponent } from './pages/clanguage/topics/operator-precidence/operator-precidence.component';
 
 
 @NgModule({
@@ -70,6 +71,7 @@ import { OperatorPrecedenceComponent } from './pages/clanguange/topics/operator-
     CKeywordsComponent,
     NewsFeedComponent,
     OperatorPrecedenceComponent,
+    OperatorPrecidenceComponent,
   ],
   imports: [
     BrowserModule,
