@@ -8,6 +8,7 @@ import { ClanguageHomeComponent } from './pages/clanguage/topics/clanguage-home/
 import { FirstCProgrammingComponent } from './pages/clanguage/topics/first-cprogramming/first-cprogramming.component';
 import { CKeywordsComponent } from './pages/clanguage/topics/ckeywords/ckeywords.component';
 import {OperatorPrecedenceComponent} from './pages/clanguage/topics/operator-precedence/operator-precedence.component';
+import {CIfStatementComponent} from './pages/clanguage/topics/cif-statement/cif-statement.component';
 
 
 // @ts-ignore
@@ -19,7 +20,8 @@ const routes: Routes = [
         {path: 'turbocpp', component: TurboCppComponent},
         {path: 'first-c-program', component: FirstCProgrammingComponent},
         {path: 'c-keywords', component: CKeywordsComponent},
-        {path: 'operatorprecedence', component: OperatorPrecedenceComponent}
+        {path: 'operatorprecedence', component: OperatorPrecedenceComponent},
+        {path: 'cif-statement', component: CIfStatementComponent}
       ]
 
   }

@@ -46,6 +46,7 @@ import {PopoverModule} from 'ngx-smart-popover';
 import {NgMarqueeModule} from 'ng-marquee';
 import { NewsFeedComponent } from './pages/news-feed/news-feed.component';
 import { OperatorPrecedenceComponent } from './pages/clanguage/topics/operator-precedence/operator-precedence.component';
+import { CIfStatementComponent } from './pages/clanguage/topics/cif-statement/cif-statement.component';
 
 
 
@@ -71,6 +72,7 @@ import { OperatorPrecedenceComponent } from './pages/clanguage/topics/operator-p
     CKeywordsComponent,
     NewsFeedComponent,
     OperatorPrecedenceComponent,
+    CIfStatementComponent,
   ],
   imports: [
     BrowserModule,
