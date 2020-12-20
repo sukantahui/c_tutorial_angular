@@ -9,6 +9,8 @@ import { FirstCProgrammingComponent } from './pages/clanguage/topics/first-cprog
 import { CKeywordsComponent } from './pages/clanguage/topics/ckeywords/ckeywords.component';
 import {OperatorPrecedenceComponent} from './pages/clanguage/topics/operator-precedence/operator-precedence.component';
 import {CIfStatementComponent} from './pages/clanguage/topics/cif-statement/cif-statement.component';
+import {CIfElseComponent} from './pages/clanguage/topics/cif-else/cif-else.component';
+import { CForLoopComponent } from './pages/clanguage/topics/cfor-loop/cfor-loop.component';
 
 
 // @ts-ignore
@@ -21,7 +23,9 @@ const routes: Routes = [
         {path: 'first-c-program', component: FirstCProgrammingComponent},
         {path: 'c-keywords', component: CKeywordsComponent},
         {path: 'operatorprecedence', component: OperatorPrecedenceComponent},
-        {path: 'cif-statement', component: CIfStatementComponent}
+        {path: 'cif-statement', component: CIfStatementComponent},
+        {path: 'cif-else', component: CIfElseComponent},
+        {path: 'cfor-loop', component: CForLoopComponent}
       ]
 
   }

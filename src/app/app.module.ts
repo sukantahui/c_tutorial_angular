@@ -47,6 +47,8 @@ import {NgMarqueeModule} from 'ng-marquee';
 import { NewsFeedComponent } from './pages/news-feed/news-feed.component';
 import { OperatorPrecedenceComponent } from './pages/clanguage/topics/operator-precedence/operator-precedence.component';
 import { CIfStatementComponent } from './pages/clanguage/topics/cif-statement/cif-statement.component';
+import { CIfElseComponent } from './pages/clanguage/topics/cif-else/cif-else.component';
+import { CForLoopComponent } from './pages/clanguage/topics/cfor-loop/cfor-loop.component';
 
 
 
@@ -73,6 +75,8 @@ import { CIfStatementComponent } from './pages/clanguage/topics/cif-statement/ci
     NewsFeedComponent,
     OperatorPrecedenceComponent,
     CIfStatementComponent,
+    CIfElseComponent,
+    CForLoopComponent,
   ],
   imports: [
     BrowserModule,
