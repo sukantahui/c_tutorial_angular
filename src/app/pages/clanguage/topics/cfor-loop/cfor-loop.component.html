@@ -29,7 +29,7 @@ This is one of the most frequently used loop in <a target="_blank" href="https:/
         int main()
         {{'{'}}
             int i;
-            for (i=1; i<=3; i++)
+            for (i=1; i&lt;=3; i++)
             {{'{'}}
                 printf("%d\n", i);
             {{'}'}}
@@ -43,6 +43,38 @@ This is one of the most frequently used loop in <a target="_blank" href="https:/
         1
         2
         3
+    </pre>
+</div>
+<h3><b>Various forms of for loop in C</b> </h3>
+    
+<p>
+   I am using variable num as the counter in all the following examples –<br>
+    <b>1)</b> Here instead of num++, I’m using num=num+1 which is same as num++.
+</p>
+<pre>
+    for (num=10; num&lt;20; num=num+1)
+</pre>
+
+<p>
+   <b>2)</b>  Initialization part can be skipped from loop as shown below, the counter variable is declared before the loop
+
+</p>
+<pre>
+    int num=10;
+    for (;num&lt;20;num++)
+</pre>
+<p>
+   <b><u> Note: </u></b>Even though we can skip initialization part but semicolon (;) before condition is must, without which you will get compilation error.<br>
+    <b>3)</b> Like initialization, you can also skip the increment part as we did below. In this case semicolon (;) is must after condition logic. In this case the increment or decrement part is done inside the loop.
+   
+</p>
+<div class="code">
+    <pre>
+        for (num=10; num&lt;20; )
+        {{'{'}}
+            //Statements
+            num++;
+        {{'}'}}
     </pre>
 </div>
 
