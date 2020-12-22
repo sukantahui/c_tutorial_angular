@@ -11,6 +11,9 @@ import {OperatorPrecedenceComponent} from './pages/clanguage/topics/operator-pre
 import {CIfStatementComponent} from './pages/clanguage/topics/cif-statement/cif-statement.component';
 import {CIfElseComponent} from './pages/clanguage/topics/cif-else/cif-else.component';
 import { CForLoopComponent } from './pages/clanguage/topics/cfor-loop/cfor-loop.component';
+import { CWhileLoopComponent } from './pages/clanguage/topics/cwhile-loop/cwhile-loop.component';
+
+
 
 
 // @ts-ignore
@@ -25,7 +28,8 @@ const routes: Routes = [
         {path: 'operatorprecedence', component: OperatorPrecedenceComponent},
         {path: 'cif-statement', component: CIfStatementComponent},
         {path: 'cif-else', component: CIfElseComponent},
-        {path: 'cfor-loop', component: CForLoopComponent}
+        {path: 'cfor-loop', component: CForLoopComponent},
+        {path: 'cwhile-loop', component: CWhileLoopComponent}
       ]
 
   }

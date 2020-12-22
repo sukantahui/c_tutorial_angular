@@ -49,6 +49,7 @@ import { OperatorPrecedenceComponent } from './pages/clanguage/topics/operator-p
 import { CIfStatementComponent } from './pages/clanguage/topics/cif-statement/cif-statement.component';
 import { CIfElseComponent } from './pages/clanguage/topics/cif-else/cif-else.component';
 import { CForLoopComponent } from './pages/clanguage/topics/cfor-loop/cfor-loop.component';
+import { CWhileLoopComponent } from './pages/clanguage/topics/cwhile-loop/cwhile-loop.component';
 
 
 
@@ -77,6 +78,7 @@ import { CForLoopComponent } from './pages/clanguage/topics/cfor-loop/cfor-loop.
     CIfStatementComponent,
     CIfElseComponent,
     CForLoopComponent,
+    CWhileLoopComponent,
   ],
   imports: [
     BrowserModule,
