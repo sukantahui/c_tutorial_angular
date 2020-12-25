@@ -3,17 +3,21 @@
 
 <h2><b>C – while loop</b></h2>
 Syntax of while loop:
-<pre>
-    while (condition test)
-    {{'{'}}
-          //Statements to be executed repeatedly 
-          // Increment (++) or Decrement (--) Operation
-    {{'}'}}
-</pre>
+<div class="code">
+    <pre>
+        while (condition test)
+        {{'{'}}
+              //Statements to be executed repeatedly 
+              // Increment (++) or Decrement (--) Operation
+        {{'}'}}
+    </pre>
+</div>
+
+
 <h2><b>Flow Diagram of while loop</b></h2>
 <img height="280px" src="assets/image/flowchart3.jpg" alt="">
 <h2><b>Example of while loop</b></h2>
-<div class="code2">
+<div class="code">
     <pre>
         #include < stdio.h>
             int main()
@@ -26,5 +30,110 @@ Syntax of while loop:
                {{'}'}}
                return 0;
             {{'}'}}
+    </pre>
+</div>
+<div class="code">
+    <h3 style="color: red;">Output:</h3>
+
+    <pre>
+        1 2 3 4
+    </pre>
+</div>
+
+<b>step1:</b>  The variable count is initialized with value 1 and then it has been tested for the condition.<br>
+<b>step2:</b>  If the condition returns true then the statements inside the body of while loop are executed else control comes out of the loop.<br>
+<b>step3:</b>  The value of count is incremented using ++ operator then it has been tested again for the loop condition.
+<div class="code">
+    <b>Guess the output of this while loop</b>
+    <pre>
+        #include < stdio.h>
+            int main()
+            {{'{'}}
+                int var=1;
+                while (var &lt;=2)
+                {{'{'}}
+                    printf("%d ", var);
+                {{'}'}}
+            {{'}'}}
+    </pre>
+</div>
+
+    <p>The program is an example of infinite while loop. Since the value of the variable var is same (there is no ++ or – operator used on this variable, inside the body of loop) the condition var&lt;=2 will be true forever and the loop would never terminate.</p>
+    <h2><b>Examples of infinite while loop</b></h2>
+<div class="code">
+    <h3><b>Example 1:</b></h3>
+    <pre>
+        #include < stdio.h>
+            int main()
+            {{'{'}}
+                 int var = 6;
+                 while (var &gt;=5)
+                {{'{'}}
+                    printf("%d", var);
+                    var++;
+                {{'}'}}
+               return 0;
+            {{'}'}}
+    </pre>
+</div>
+<b>Infinite loop:</b>var will always have value &gt;=5 so the loop would never end.
+
+<div class="code">
+    <h3><b>Example 2:</b></h3>
+    <pre>
+        #include < stdio.h>
+            int main()
+            {{'{'}}
+                int var =5;
+                while (var &lt;=10)
+                {{'{'}}
+                   printf("%d", var);
+                   var--;
+                {{'}'}}
+                return 0;
+            {{'}'}}
+    </pre>
+</div>
+<b>Infinite loop:</b>var value will keep decreasing because of –- operator, hence it will always be &lt;= 10.
+
+
+<br><br>    
+<h2><b>Use of Logical operators in while loop</b></h2>
+Just like relational operators (&lt;, &gt;, &gt;=, &lt;=, ! =, ==), we can also use logical operators in while loop. The following scenarios are valid :
+<div class="code">
+    while(num1&lt;=10 && num2&lt;=10)
+</div>
+<br>
+<h3>-using AND(&&) operator, which means both the conditions should be true.</h3>
+<div class="code">
+    while(num1&lt;=10||num2&lt;=10)
+</div>
+<br>
+<h3>– OR(||) operator, this loop will run until both conditions return false.</h3>
+<div class="code">
+    while(num1!=num2 &&num1 &lt;=num2)
+</div>
+<br>
+<h3>– Here we are using two logical operators NOT (!) and AND(&&).</h3>
+<div class="code">
+    while(num1!=10 ||num2&gt;=num1)
+</div>
+<br>
+<h2><b>Example of while loop using logical operator</b></h2>
+In this example we are testing multiple conditions using logical operator inside while loop.
+<div class="code">
+    <pre>
+        #include < stdio.h>
+            int main()
+            {{'{'}}
+               int i=1, j=1;
+               while (i <= 4 || j <= 3)
+               {
+                printf("%d %d\n",i, j);
+                i++;
+                j++;
+               }
+               return 0;
+            }
     </pre>
 </div>
