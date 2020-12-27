@@ -12,6 +12,7 @@ import {CIfStatementComponent} from './pages/clanguage/topics/cif-statement/cif-
 import {CIfElseComponent} from './pages/clanguage/topics/cif-else/cif-else.component';
 import { CForLoopComponent } from './pages/clanguage/topics/cfor-loop/cfor-loop.component';
 import { CWhileLoopComponent } from './pages/clanguage/topics/cwhile-loop/cwhile-loop.component';
+import { DoWhileLoopComponent } from './pages/clanguage/topics/do-while-loop/do-while-loop.component';
 
 
 
@@ -29,7 +30,8 @@ const routes: Routes = [
         {path: 'cif-statement', component: CIfStatementComponent},
         {path: 'cif-else', component: CIfElseComponent},
         {path: 'cfor-loop', component: CForLoopComponent},
-        {path: 'cwhile-loop', component: CWhileLoopComponent}
+        {path: 'cwhile-loop', component: CWhileLoopComponent},
+        {path: 'doWhileLoop', component: DoWhileLoopComponent}
       ]
 
   }

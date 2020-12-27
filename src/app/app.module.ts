@@ -50,6 +50,7 @@ import { CIfStatementComponent } from './pages/clanguage/topics/cif-statement/ci
 import { CIfElseComponent } from './pages/clanguage/topics/cif-else/cif-else.component';
 import { CForLoopComponent } from './pages/clanguage/topics/cfor-loop/cfor-loop.component';
 import { CWhileLoopComponent } from './pages/clanguage/topics/cwhile-loop/cwhile-loop.component';
+import { DoWhileLoopComponent } from './pages/clanguage/topics/do-while-loop/do-while-loop.component';
 
 
 
@@ -79,6 +80,7 @@ import { CWhileLoopComponent } from './pages/clanguage/topics/cwhile-loop/cwhile
     CIfElseComponent,
     CForLoopComponent,
     CWhileLoopComponent,
+    DoWhileLoopComponent,
   ],
   imports: [
     BrowserModule,
