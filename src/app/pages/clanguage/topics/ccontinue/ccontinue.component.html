@@ -1,0 +1,104 @@
+<h1><b>C – continue statement with example</b></h1>
+The <b>continue</b> statement is used inside loops. When a continue statement is encountered inside a loop, control jumps to the beginning of the loop for next iteration, skipping the execution of statements inside the body of loop for the current iteration.
+<h2><b>C – Continue statement</b></h2>
+<b>Syntax:</b>
+<div class="code">
+    <pre>
+        continue; 
+    </pre>
+</div>
+<h1><b>Flow diagram of continue statement</b></h1>
+<h1><b>Example: continue statement inside for loop</b></h1>
+<div class="code">
+    <pre>
+        #include < stdio.h>
+            int main()
+            {{'{'}}
+               for (int j=0; j&lt;=8; j++)
+               {{'{'}}
+                  if (j==4)
+                  {{'{'}}  
+                    /* The continue statement is encountered when
+                     * the value of j is equal to 4.
+                     */
+                    continue;
+                   {{'}'}}
+            
+                   /* This print statement would not execute for the
+                * loop iteration where j ==4  because in that case
+                * this statement would be skipped.
+                */
+                   printf("%d ", j);
+               {{'}'}}
+               return 0;
+            {{'}'}}
+    </pre>
+</div>
+<b>Output:</b>
+<div class="code">
+    <pre>
+        0 1 2 3 5 6 7 8
+    </pre>
+</div>
+<p>Value 4 is missing in the output, why? When the value of variable j is 4, the program encountered a continue statement, which makes the control to jump at the beginning of the for loop for next iteration, skipping the statements for current iteration (that’s the reason printf didn’t execute when j is equal to 4).</p>
+<h1><b>Example: Use of continue in While loop</b></h1>
+<p>In this example we are using continue inside while loop. When using while or do-while loop you need to place an increment or decrement statement just above the continue so that the counter value is changed for the next iteration. For example, if we do not place counter– statement in the body of “if” then the value of counter would remain 7 indefinitely.</p>
+<div class="code">
+    <pre>
+        #include < stdio.h>
+            int main()
+            {{'{'}}
+                int counter=10;
+                while (counter &gt;=0)
+                {{'{'}}
+                    if (counter==7)
+                 {{'{'}}
+                      counter--;
+                      continue;
+                 {{'}'}}
+                 printf("%d  ", counter);
+                 counter--;
+                {{'}'}}
+                return 0;
+             {{'}'}}
+    </pre>
+</div>
+<b>Output:</b>
+<div class="code">
+    <pre>
+        10 9 8 6 5 4 3 2 1 0
+    </pre>
+</div>
+<h2>The print statement is skipped when counter value was 7.</h2>
+<h1><b>Another Example of continue in do-While loop</b></h1>
+<div class="code">
+    <pre>
+        #include < stdio.h>
+            int main()
+            {{'{'}}
+               int j=0;
+               do
+               {{'{'}}
+                  if (j==7)
+                  {{'{'}}
+                     j++;
+                     continue;
+                  
+                  printf("%d ", j);
+                  j++;
+                {{'}'}}while(j&lt10);
+               return 0;
+            {{'}'}}
+    </pre>
+</div>
+<b>Output:</b>
+<div class="code">
+    <pre>
+        0 1 2 3 4 5 6 8 9
+    </pre>
+</div>
+<div fxLayout="row" fxLayoutAlign="space-around center" >
+    <div class="50" fxFlex="65" ><a [routerLink]="['/clanguage/doWhileLoop']" routerLinkActive="MyActiveMenu"><h2>&lt;Previous</h2></a></div>
+    <div class="50" fxFlex="65" > <a [routerLink]="['/clanguage/cif-statement']" routerLinkActive="MyActiveMenu"><h2>Next&gt;</h2></a></div>
+</div>
+

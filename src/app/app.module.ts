@@ -51,6 +51,9 @@ import { CIfElseComponent } from './pages/clanguage/topics/cif-else/cif-else.com
 import { CForLoopComponent } from './pages/clanguage/topics/cfor-loop/cfor-loop.component';
 import { CWhileLoopComponent } from './pages/clanguage/topics/cwhile-loop/cwhile-loop.component';
 import { DoWhileLoopComponent } from './pages/clanguage/topics/do-while-loop/do-while-loop.component';
+import { CContinueComponent } from './pages/clanguage/topics/ccontinue/ccontinue.component';
+import { CBreakStatementComponent } from './pages/clanguage/topics/cbreak-statement/cbreak-statement.component';
+import { CSwitchCaseComponent } from './pages/clanguage/topics/cswitch-case/cswitch-case.component';
 
 
 
@@ -81,6 +84,9 @@ import { DoWhileLoopComponent } from './pages/clanguage/topics/do-while-loop/do-
     CForLoopComponent,
     CWhileLoopComponent,
     DoWhileLoopComponent,
+    CContinueComponent,
+    CBreakStatementComponent,
+    CSwitchCaseComponent,
   ],
   imports: [
     BrowserModule,

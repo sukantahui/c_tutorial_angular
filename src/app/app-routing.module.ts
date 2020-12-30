@@ -13,6 +13,10 @@ import {CIfElseComponent} from './pages/clanguage/topics/cif-else/cif-else.compo
 import { CForLoopComponent } from './pages/clanguage/topics/cfor-loop/cfor-loop.component';
 import { CWhileLoopComponent } from './pages/clanguage/topics/cwhile-loop/cwhile-loop.component';
 import { DoWhileLoopComponent } from './pages/clanguage/topics/do-while-loop/do-while-loop.component';
+import { CContinueComponent } from './pages/clanguage/topics/ccontinue/ccontinue.component';
+import { CBreakStatementComponent } from './pages/clanguage/topics/cbreak-statement/cbreak-statement.component';
+import { CSwitchCaseComponent } from './pages/clanguage/topics/cswitch-case/cswitch-case.component';
+
 
 
 
@@ -31,7 +35,10 @@ const routes: Routes = [
         {path: 'cif-else', component: CIfElseComponent},
         {path: 'cfor-loop', component: CForLoopComponent},
         {path: 'cwhile-loop', component: CWhileLoopComponent},
-        {path: 'doWhileLoop', component: DoWhileLoopComponent}
+        {path: 'doWhileLoop', component: DoWhileLoopComponent},
+        {path: 'ccontinue', component: CContinueComponent},
+        {path: 'cbreak-statement', component: CBreakStatementComponent},
+        {path: 'cswitch-case', component: CSwitchCaseComponent},
       ]
 
   }
