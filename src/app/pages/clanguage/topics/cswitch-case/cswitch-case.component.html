@@ -1,0 +1,210 @@
+<h1><b>C – switch case statement in C Programming with example</b></h1>
+The <b>switch case statement</b> is used when we have multiple options and we need to perform a different task for each option.
+<h1><b>C – Switch Case Statement</b></h1>
+Before we see how a switch case statement works in a C program, let’s checkout the syntax of it.
+<div class="code">
+    <pre>
+        switch (variable or an integer expression)
+{{'{'}}
+     case constant:
+     //C Statements
+     ;
+     case constant:
+     //C Statements
+     ;
+     default:
+     //C Statements
+     ;
+{{'}'}}
+    </pre>
+</div>
+<h1><b>Flow Diagram of Switch Case</b></h1>
+<h1><b>Example of Switch Case in C</b></h1>
+Let’s take a simple example to understand the working of a switch case statement in C program.
+<div class="code">
+    <pre>
+        #include < stdio.h>
+            int main()
+            {{'{'}}
+                 int num=2;
+                 switch(num+2)
+                 {{'{'}}
+                     case 1:
+                       printf("Case1: Value is: %d", num);
+                     case 2:
+                       printf("Case1: Value is: %d", num);
+                     case 3:
+                       printf("Case1: Value is: %d", num);
+                     default:
+                       printf("Default: Value is: %d", num);
+                {{'}'}}
+                return 0;
+            {{'}'}}
+    </pre>
+</div>
+<b>Output:</b>
+<div class="code">
+    <pre>
+        Default: value is: 2
+    </pre>
+</div>
+<b>Explanation:</b><p>In switch I gave an expression, you can give variable also. I gave num+2, where num value is 2 and after addition the expression resulted 4. Since there is no case defined with value 4 the default case is executed.</p>
+<h1><b>Twist in a story – Introducing Break statement</b></h1>
+<h3>Before we discuss more about <a href="https://beginnersbook.com/2014/01/c-break-statement/">break statement</a>,guess the output of this C program.</h3>
+<div class="code">
+    <pre>
+        #include < stdio.h>
+            int main()
+            {{'{'}}
+                 int i=2;
+                 switch (i)
+                 {{'{'}}
+                    case 1:
+                       printf("Case1 ");
+                    case 2:
+                       printf("Case2 ");
+                    case 3:
+                       printf("Case3 ");
+                    case 4:
+                       printf("Case4 ");
+                    default:
+                       printf("Default ");
+                 {{'}'}}
+                return 0;
+            {{'}'}}
+    </pre>
+</div>
+<b>Output:</b>
+<div class="code">
+    <pre>
+        Case2 Case3 Case4 Default
+    </pre>
+</div>
+<p>I passed a variable to switch, the value of the variable is 2 so the control jumped to the case 2, However there are no such statements in the above program which could break the flow after the execution of case 2. That’s the reason after case 2, all the subsequent cases and default statements got executed.</p>
+<b>How to avoid this situation?</b>
+<h2>We can use break statement to break the flow of control after every case block.</h2>
+<h3><b>Break statement in Switch Case</b></h3>
+<p>Break statements are useful when you want your program-flow to come out of the switch body. Whenever a break statement is encountered in the switch body, the control comes out of the switch case statement.</p>
+<b>Example of Switch Case with break</b>
+I’m taking the same above that we have seen above but this time we are using break.
+<div class="code">
+    <pre>
+        #include < stdio.h>
+            int main()
+            {{'{'}}
+                 int i=2;
+                 switch (i)
+                 {{'{'}}
+                      case 1:
+                         printf("Case1 ");
+                         break;
+                      case 2:
+                         printf("Case2 ");
+                         break;
+                      case 3:
+                         printf("Case3 ");
+                         break;
+                      case 4:
+                         printf("Case4 ");
+                         break;
+                      default:
+                         printf("Default ");
+                 {{'}'}}
+                 return 0;
+            {{'}'}}
+    </pre>
+</div>
+<b>Output:</b>
+<div class="code">
+    <pre>
+        Case 2
+    </pre>
+</div>
+<h3><b>Why didn’t I use break statement after default?</b></h3>
+<p>The control would itself come out of the switch after default so I didn’t use it, however if you want to use the break after default then you can use it, there is no harm in doing that.</p>
+<h1><b>Important points regarding Switch Case</b></h1>
+<h3>1) Case doesn’t always need to have order 1, 2, 3 and so on. They can have any integer value after case keyword. Also, case doesn’t need to be in an ascending order always, you can specify them in any order as per the need of the program.</h3>
+    2) You can also use characters in switch case. for example –
+ <div class="code">
+     <pre>
+        #include < stdio.h>
+            int main()
+            {{'{'}}
+                 char ch='b';
+                 switch (ch)
+                 {{'{'}}
+                     case 'd':
+                        printf("CaseD ");
+                        break;
+                     case 'b':
+                        printf("CaseB");
+                        break;
+                     case 'c':
+                        printf("CaseC");
+                        break;
+                     case 'z':
+                        printf("CaseZ ");
+                        break;
+                     default:
+                        printf("Default ");
+                {{'}'}}
+                return 0;
+            {{'}'}}
+     </pre>
+ </div>
+ <b>Output:</b>
+ <div class="code">
+     <pre>
+        CaseB
+     </pre>
+ </div>
+ 3) The expression provided in the switch should result in a constant value otherwise it would not be valid.
+ <b>For example:Valid expressions for switch –</b>
+ <div class="code">
+     <pre>
+        switch(1+2+23)
+        switch(1*2+3%4)
+     </pre>
+ </div>
+ <h3><b>Invalid switch expressions –</b></h3>
+ <div class="code">
+     <pre>
+        switch(ab+cd)
+        switch(a+b+c)
+     </pre>
+ </div>
+ <p>4) Nesting of switch statements are allowed, which means you can have switch statements inside another switch. However nested switch statements should be avoided as it makes program more complex and less readable.</p>
+ <p>5) Duplicate case values are not allowed. For example, the following program is incorrect:
+This program is wrong because we have two case ‘A’ here which is wrong as we cannot have duplicate case values.</p>
+<div class="code">
+    <pre>
+        #include < stdio.h>
+            int main()
+            {{'{'}}
+                 char ch='B';
+                 switch (ch)
+                 {{'{'}}
+                     case 'A':
+                        printf("CaseA");
+                        break;
+                     case 'A':
+                        printf("CaseA");
+                        break;
+                     case 'B':
+                        printf("CaseB");
+                        break;
+                     case 'C':
+                        printf("CaseC ");
+                        break;
+                     default:
+                        printf("Default ");
+                {{'}'}}
+                return 0;
+            {{'}'}}
+    </pre>
+</div>
+<p>6) The default statement is optional, if you don’t have a default in the program, it would run just fine without any issues. However it is a good practice to have a default statement so that the default executes if no case is matched. This is especially useful when we are taking input from user for the case choices, since user can sometime enter wrong value, we can remind the user with a proper error message that we can set in the default statement.</p>
+<div fxLayout="row" fxLayoutAlign="space-around center" >
+    <div class="50" fxFlex="65" ><a [routerLink]="['/clanguage/cbreak-statement']" routerLinkActive="MyActiveMenu"><h2>&lt;Previous</h2></a></div>
+    <div class="50" fxFlex="65" > <a [routerLink]="['/clanguage/cif-statement']" routerLinkActive="MyActiveMenu"><h2>Next&gt;</h2></a></div>
+</div>

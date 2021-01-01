@@ -10,4 +10,15 @@
 ul{
   list-style: none;
 }
+#button1{
+  width: 30px;
+}
 
+#topics{
+  :hover{
+    transition-delay: 400ms;
+    background-color: #FFFFFF;
+    padding: 2px;
+    margin-left: 10px;
+  }
+}

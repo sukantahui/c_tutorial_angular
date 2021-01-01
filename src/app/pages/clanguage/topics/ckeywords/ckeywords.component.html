@@ -1,1 +1,84 @@
-<p>ckeywords works!</p>
+
+
+<section  [ngxWatermark]="options">
+    <h1>C Keywords – Reserved Words</h1>
+    <p>
+       In C, we have 32 keywords, which have their predefined meaning and cannot be used as a variable name. These words are also known as “reserved words”. It is good practice to avoid using these keywords as variable name. These are –
+    </p>
+    <table class="table table-responsive" id="keywords-table">
+        <caption><b>C Keywords or reserved words</b></caption>
+        <tr>
+            <td>auto</td>
+            <td>break</td>
+            <td>case</td>
+            <td>char</td>
+        </tr>
+        <tr>
+            <td>const</td>
+            <td>continue</td>
+            <td>default</td>
+            <td>do</td>
+        </tr>
+        <tr>
+            <td>int</td>
+            <td>long</td>
+            <td>register</td>
+            <td>return</td>
+        </tr>
+        <tr>
+            <td>short</td>
+            <td>signed</td>
+            <td>sizeof</td>
+            <td>static</td>
+        </tr>
+        <tr>
+            <td>struct</td>
+            <td>switch</td>
+            <td>typrdef</td>
+            <td>union</td>
+        </tr>
+        <tr>
+            <td>unsigned</td>
+            <td>void</td>
+            <td>volatile</td>
+            <td>while</td>
+        </tr>
+        <tr>
+            <td>double</td>
+            <td>else</td>
+            <td>enum</td>
+            <td>extern</td>
+        </tr>
+        <tr>
+            <td>float</td>
+            <td>for</td>
+            <td>goto</td>
+            <td>if</td>
+        </tr>
+    </table>
+
+</section>
+<h3><b>Basics usage of these keywords –</b></h3>
+<h4><b>if, else, switch, case, default –</b> Used for decision control programming structure.</h4>
+<h4><b>int, float, char, double, long – </b>These are the data types and used during variable declaration.</h4>
+<h4><b>for, while, do-</b> types of loop structures in C.</h4>
+<h4><b>void – </b> One of the return type.</h4>
+<h4><b>goto </b> Used for redirecting the flow of execution</h4>
+<h4><b>auto, signed, const, extern, register, unsigned – </b>defines a variable.</h4>
+<h4><b>return - </b> This keyword is used for returning a value.</h4>
+<h4><b>continue – </b>  It is generally used with for, while and dowhile loops, when compiler encounters this statement it performs the next iteration of the loop, skipping rest of the statements of current iteration</h4>
+<h4><b>enum –  </b>Set of constants.</h4>
+<h4><b>sizeof – </b>It is used to know the size.</h4>
+<h4><b>struct, typedef  – </b> Both of these keywords used in structures (Grouping of data types in a singlerecord).</h4>
+<h4><b>union –  </b>It is a collection of variables, which shares the same memory location and memory storage.</h4>
+
+
+<div fxLayout="row" fxLayoutAlign="space-around center" >
+    <div class="50" fxFlex="65" ><a [routerLink]="['/clanguage/first-c-program']" routerLinkActive="MyActiveMenu"><h2>&lt;Previous</h2></a></div>
+    <div class="50" fxFlex="65" > <a [routerLink]="['/clanguage/operatorprecedence']" routerLinkActive="MyActiveMenu"><h2>Next&gt;</h2></a></div>
+  </div>
+
+
+
+
+

@@ -16,7 +16,7 @@ export class TurboCppComponent implements OnInit {
     alpha: 0.4,
     degree: -45,
     fontSize: '20px',
-};
+  };
 
   constructor() { }
 

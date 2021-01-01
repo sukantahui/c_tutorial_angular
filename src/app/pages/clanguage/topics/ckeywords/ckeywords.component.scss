@@ -1,0 +1,12 @@
+#keywords-table{
+    color: blue;
+    border: 2px solid black;
+    width: 350px;
+    font-size: medium;
+    background: linear-gradient(42deg, #fbfeff 0%, #f7fde4 50%, #fbfeff 50.01%, #FFFFFF 100%);
+    border-radius: 7px;
+    box-shadow:         1px 1px 5px 6px rgba(88, 85, 85,.2);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    caption{
+        padding: 20px;
+    }
+}

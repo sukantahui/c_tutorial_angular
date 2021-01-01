@@ -1,0 +1,238 @@
+<h1><b>Operator precedence and Associativity in C programming language</b></h1><br>
+In this guide, we will learn operator precedence and associativity in <a target="_blank" href="https://beginnersbook.com/category/c-programming/">C Programming </a>.
+<h3><b>Operator Precedence in C</b></h3>
+<p><b>Operator precedence</b> determines which operator is evaluated first when an expression has more than one operators. For example 100-2*30 would yield 40, because it is evaluated as 100 – (2*30) and not (100-2)*30. The reason is that multiplication * has higher precedence than subtraction(-).</p>
+<h1><b>Associativity in C</b></h1>
+<p>Associativity is used when there are two or more operators of same precedence is present in an expression. For example multiplication and division arithmetic operators have same precedence, lets say we have an expression 5*2/10, this expression would be evaluated as (5*2)/10 because the associativity is left to right for these operators. Similarly 20/2*5 would be calculated as (20*2)/5.</p>
+<h1><b>Operator precedence and Associativity Table in C Programming</b></h1>
+<div>
+    <table class="table">
+        <tr>
+            <td><b>Description</b></td>
+            <td><b>Operator</b></td>
+            <td><b>Associativity</b></td>
+        </tr>
+        <tr>
+            <td>Function expression</td>
+            <td> ( )</td>
+            <td>Left to Right</td>
+        </tr>
+        <tr>
+            <td>Array Expression</td>
+            <td>[ ]</td>
+            <td>Left to Right</td>
+        </tr>
+        <tr>
+            <td>Structure operators</td>
+            <td>-></td>
+            <td>Left to Right</td>
+        </tr><tr>
+            <td>Unary minus</td>
+            <td>-</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td>Increment & Decrement</td>
+            <td>—  ++</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td>One’s compliment</td>
+            <td>~</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td>Pointer Operators</td>
+            <td>& *</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td>Type cast</td>
+            <td>(data type)</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td>Type cast</td>
+            <td>(data type)</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td>size of operator</td>
+            <td>sizeof</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td>Left and Right Shift</td>
+            <td>&gt;&gt; &lt;&lt;</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" class="text-center">
+                <h1>Arithmetic Operators</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>Multiplication operator, Divide by, Modulus</td>
+            <td>*,  /,  %</td>
+            <td>Left to Right</td>
+        </tr>
+        <tr>
+            <td>Add, Substract</td>
+            <td>+,  –</td>
+            <td>Left to Right</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="text-center">
+                <h1>Relational Operators</h1>
+            </td>
+        <tr>
+            <td>Less Than</td>
+            <td>&lt;</td>
+            <td>Left to Right</td>
+        </tr>
+        <tr>
+            <td>Greater Than</td>
+            <td>&gt;</td>
+            <td>Left to Right</td>
+        </tr>
+        <tr>
+            <td>Less than equal to</td>
+            <td>&lt;=</td>
+            <td>Left to Right</td>
+        </tr>
+        <tr>
+            <td>Greater than equal to</td>
+            <td>&gt;=</td>
+            <td>Left to Right</td>
+        </tr>
+        <tr>
+            <td>Equal to</td>
+            <td>==</td>
+            <td>Left to Right</td>
+        </tr>
+        <tr>
+            <td>Not equal</td>
+            <td>!=</td>
+            <td>Left to Right</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="text-center">
+                <h1>Logical Operators</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>And</td>
+            <td>&&</td>
+            <td>Left to Right</td>
+        </tr>
+        <tr>
+            <td>Or</td>
+            <td>||</td>
+            <td>Left to Right</td>
+        </tr>
+        <tr>
+            <td>NOT</td>
+            <td>!</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="text-center">
+                <h1>Bitwise Operators</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>AND</td>
+            <td>&</td>
+            <td>Left to Right</td>
+        </tr>
+        <tr>
+            <td>Exclusive OR</td>
+            <td>^</td>
+            <td>Left to Right</td>
+        </tr>
+        <tr>
+            <td>Inclusive OR</td>
+            <td>|</td>
+            <td>Left to Right</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="text-center">
+                <h1>Assignment Operators</h1>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>=</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>*=</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>/=</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>%=</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>+=</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>-=</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>&=</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>^=</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>|=</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>&lt;&lt;=</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>&gt;&gt;=</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="text-center">
+                <h1>Other Operators</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>Comma</td>
+            <td>,</td>
+            <td>Right to Left</td>
+        </tr>
+        <tr>
+            <td>Conditional Operator</td>
+            <td>?:</td>
+            <td>Right to Left</td>
+        </tr>
+    </table>
+</div>
+<div fxLayout="row" fxLayoutAlign="space-around center" >
+    <div class="50" fxFlex="65" ><a [routerLink]="['/clanguage/c-keywords']" routerLinkActive="MyActiveMenu"><h2>&lt;Previous</h2></a></div>
+    <div class="50" fxFlex="65" > <a [routerLink]="['/clanguage/cif-statement']" routerLinkActive="MyActiveMenu"><h2>Next&gt;</h2></a></div>
+</div>

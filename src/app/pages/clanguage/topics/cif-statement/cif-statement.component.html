@@ -1,0 +1,87 @@
+<h1><b>If statement in C programming with example</b> </h1>
+
+
+
+<p>When we need to execute a block of statements only when a given condition is true then we use if statement. In the next tutorial, we will learn <a target="_blank" href="https://beginnersbook.com/2014/01/c-if-else-statement-example/">C if..else, nested if..else and else..if.</a></p>
+
+<h1><b>C – If statement</b></h1>
+<b>Syntax of if statement:</b>
+<p>The statements inside the body of “if” only execute if the given condition returns true. If the condition returns false then the statements inside “if” are skipped.</p>
+<pre>
+    if (condition)
+    {{'{'}}
+        //Block of C statements here
+        //These statements will only execute if the condition is true
+    {{'}'}}
+
+</pre>
+<h1>Flow Diagram of if statement</h1>
+<img height="300px" src="assets/image/flowchart.jfif" alt=""><br>
+
+
+
+
+
+<h1>Example of if statement</h1>
+<div class="code">
+    <pre>
+        #include < stdio.h>
+            int main()
+            {{'{'}}
+                int x = 20;
+                int y = 22;
+                if (x&lt;y)
+                {{'{'}}
+                    printf("Variable x is less than y");
+                {{'}'}}
+                return 0;
+            {{'}'}}
+    </pre>
+</div>
+<h3 style="color: red;">Output:</h3>
+    Variable x is less than y
+<p><b>Explanation:</b> The condition (x<y) specified in the “if” returns true for the value of x and y, so the statement inside the body of if is executed.</p>
+<h2>Example of multiple if statements</h2>
+<p>We can use multiple if statements to check more than one conditions.</p>
+<div class="code">
+    <pre>
+        #include < stdio.h>
+        int main()
+        {{'{'}}
+            int x, y;
+            printf("enter the value of x:");
+            scanf("%d", &x);
+            printf("enter the value of y:");
+            scanf("%d", &y);
+            if (x&gt;y)
+            {{'{'}}
+                printf("x is greater than y\n");
+            {{'}'}}
+            if (x&lt;y)
+            {{'{'}}
+                printf("x is less than y\n");
+            {{'}'}}
+            if (x==y)
+            {{'{'}}
+                printf("x is equal to y\n");
+            {{'}'}}
+            printf("End of Program");
+            return 0;
+        {{'}'}}
+    </pre>
+
+</div>
+In the above example the output depends on the user input. <br>
+<h3 style="color: red;">Output:</h3>
+<pre>
+    enter the value of x:20
+    enter the value of y:20
+    x is equal to y
+    End of Program
+</pre>
+
+
+<div fxLayout="row" fxLayoutAlign="space-around center" >
+    <div class="50" fxFlex="65" ><a [routerLink]="['/clanguage/operatorprecedence']" routerLinkActive="MyActiveMenu"><h2>&lt;Previous</h2></a></div>
+    <div class="50" fxFlex="65" > <a [routerLink]="['/clanguage/cif-else']" routerLinkActive="MyActiveMenu"><h2>Next&gt;</h2></a></div>
+  </div>

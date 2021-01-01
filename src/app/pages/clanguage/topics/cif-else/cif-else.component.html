@@ -1,0 +1,218 @@
+<h1><b>C – If..else, Nested If..else and else..if Statement with example</b></h1>
+<p>In the last tutorial we learned how to use <a href="http://127.0.0.1:4200/clanguage/cif-statement"> if statement in C.</a> In this guide, we will learn how to use if else, nested if else and else if statements in a C Program.</p>
+
+<h3><b>C If else statement</b></h3>
+
+<h4>Syntax of if else statement:</h4>
+
+<p>If condition returns true then the statements inside the body of “if” are executed and the statements inside body of “else” are skipped.</p>
+<p>If condition returns false then the statements inside the body of “if” are skipped and the statements in “else” are executed.</p>
+
+
+<div class="code">
+    <pre>
+        if(condition) {{'{'}}
+            // Statements inside body of if
+        {{'}'}}
+        else {{'{'}}
+            //Statements inside body of else
+        {{'}'}}
+    </pre>
+</div>
+
+<h3>Flow diagram of if else statement</h3>
+<img height="350px" src="assets/image/flowchart1.jfif" alt="">
+<h3>Example of if else statement</h3>
+<p>In this program user is asked to enter the age and based on the input, the if..else statement checks whether the entered age is greater than or equal to 18. If this condition meet then display message “You are eligible for voting”, however if the condition doesn’t meet then display a different message “You are not eligible for voting”.</p>
+
+<div class="code">
+    <pre>
+        #include < stdio.h>
+        int main()
+        {{'{'}}
+            int age;
+            printf("Enter your age:");
+            scanf("%d",&age);
+            if(age >=18)
+            {{'{'}}
+                /* This statement will only execute if the
+                * above condition (age>=18) returns true
+                */
+                printf("You are eligible for voting");            
+            {{'}'}}
+            else
+            {{'{'}}
+                /* This statement will only execute if the
+                * condition specified in the "if" returns false.
+                */
+                printf("You are not eligible for voting");
+            {{'}'}}
+            return 0;
+        {{'}'}}
+    </pre>
+</div>
+
+
+<div class="code">
+    <h3>Output:</h3>
+    <pre>
+        Enter your age:14
+        You are not eligible for voting
+    </pre>
+</div>
+<b>Note:</b> If there is <b>only one statement</b> is present in the “if” or “else” body then you do not need to use the braces (parenthesis). For example the above program can be rewritten like this:
+
+<div class="code">
+    <pre>
+        #include < stdio.h>
+        int main()
+        {{'{'}}
+        int age;
+        printf("Enter your age:");
+        scanf("%d",&age);
+        if(age >=18)
+         printf("You are eligible for voting");
+        else
+         printf("You are not eligible for voting");
+        return 0;
+        {{'}'}}
+    </pre>
+</div>
+
+<h2><b>C Nested If..else statement</b></h2>
+When an if else statement is present inside the body of another “if” or “else” then this is called nested if else.
+
+<h3><b>Syntax of Nested if else statement:</b></h3>
+<div class="code">
+    <pre>
+        if(condition){{'{'}}
+            //Nested if else inside the body of "if"
+            if(condition2){{'{'}}
+                //Statements inside the body of nested "if"
+            {{'}'}}
+            else{{'{'}}
+                //Statements inside the body of "else"
+            {{'}'}}
+        {{'}'}}
+    </pre>
+</div>
+<h2><b>Example of nested if..else</b></h2>
+<div class="code">
+    <pre>
+        #include < stdio.h>
+        int main()
+        {{'{'}}
+            int var1, var2;
+            printf("Input the value of var1:");
+            scanf("%d", &var1);
+            printf("Input the value of var2:");
+            scanf("%d",&var2);
+            if (var1 != var2)
+            {{'{'}}
+                printf("var1 is not equal to var2\n");
+	            //Nested if else
+                if (var1 > var2)
+                {{'{'}}
+                    printf("var1 is greater than var2\n");
+                {{'}'}}
+                else
+                {{'{'}}
+                    printf("var2 is greater than var1\n");
+                {{'}'}}
+            {{'}'}}
+            else
+            {{'{'}}
+                printf("var1 is equal to var2\n");
+            {{'}'}}
+            return 0;
+        {{'}'}}
+    </pre>
+</div>
+
+<div class="code">
+    <h3>Output:</h3>
+    <!-- <pre>
+        Input the value of var1:12
+        Input the value of var2:21
+        var1 is not equal to var2
+        var2 is greater than var1
+    </pre> -->
+</div>
+<h2>C – else..if statement</h2>
+<p>The else..if statement is useful when you need to check multiple conditions within the program, nesting of if-else blocks can be avoided using else..if statement.</p>
+
+<div class="code">
+    <h3>Syntax of else..if statement:</h3>
+    <pre>
+        if (condition1) 
+        {{'{'}}
+            //These statements would execute if the condition1 is true
+        {{'}'}}
+        else if(condition2) 
+        {{'{'}}
+            //These statements would execute if the condition2 is true
+        {{'}'}}
+        else if (condition3)
+        {{'{'}}
+            //These statements would execute if the condition3 is true
+        {{'}'}}
+        .
+        .
+        else 
+        {{'{'}}
+            //These statements would execute if all the conditions return false.
+        {{'}'}}
+    </pre>
+</div>
+<h2><b>Example of else..if statement</b></h2>
+<p>Lets take the same example that we have seen above while discussing nested if..else. We will rewrite the same program using else..if statements.</p>
+<div class="code">
+    <pre>
+        #include < stdio.h>
+        int main()
+        {{'{'}}
+            int var1, var2;
+            printf("Input the value of var1:");
+            scanf("%d", &var1);
+            printf("Input the value of var2:");
+            scanf("%d",&var2);
+            if (var1 !=var2) 
+            {{'{'}}
+                printf("var1 is not equal to var2\n");
+            {{'}'}}
+            else if (var1 > var2)
+            {{'{'}}
+                printf("var1 is greater than var2\n");
+            {{'}'}}
+            else if (var2 > var1)
+            {{'{'}}
+                printf("var2 is greater than var1\n");
+            {{'}'}}
+            else{{'{'}}
+                printf("var1 is equal to var2\n");
+            {{'}'}}
+            return 0;
+        {{'}'}}
+    </pre>
+</div>
+<div class="code">
+    <h3>Output:</h3>
+    <pre>
+        Input the value of var1:12
+        Input the value of var2:21
+        var1 is not equal to var2
+    </pre>
+</div>
+
+<p><b> you can see that only the statements inside the body of “if” are executed. This is because in this statement as soon as a condition is satisfied, the statements inside that block are executed and rest of the blocks are ignored.</b></p>
+<h3><b><u>Important Points:</u></b></h3>
+1. else and else..if are optional statements, a program having only “if” statement would run fine.<br>
+2. else and else..if cannot be used without the “if”.<br>
+3. There can be any number of else..if statement in a if else..if block.<br>
+4. If none of the conditions are met then the statements in else block gets executed.<br>
+5. Just like relational operators, we can also use logical operators such as AND (&&), OR(||) and NOT(!).<br>
+
+<div fxLayout="row" fxLayoutAlign="space-around center" >
+    <div class="50" fxFlex="65" ><a [routerLink]="['/clanguage/cif-statement']" routerLinkActive="MyActiveMenu"><h2>&lt;Previous</h2></a></div>
+    <div class="50" fxFlex="65" > <a [routerLink]="['/clanguage/cfor-loop']" routerLinkActive="MyActiveMenu"><h2>Next&gt;</h2></a></div>
+</div>

@@ -45,6 +45,16 @@ import {TooltipModule} from 'ng2-tooltip-directive';
 import {PopoverModule} from 'ngx-smart-popover';
 import {NgMarqueeModule} from 'ng-marquee';
 import { NewsFeedComponent } from './pages/news-feed/news-feed.component';
+import { OperatorPrecedenceComponent } from './pages/clanguage/topics/operator-precedence/operator-precedence.component';
+import { CIfStatementComponent } from './pages/clanguage/topics/cif-statement/cif-statement.component';
+import { CIfElseComponent } from './pages/clanguage/topics/cif-else/cif-else.component';
+import { CForLoopComponent } from './pages/clanguage/topics/cfor-loop/cfor-loop.component';
+import { CWhileLoopComponent } from './pages/clanguage/topics/cwhile-loop/cwhile-loop.component';
+import { DoWhileLoopComponent } from './pages/clanguage/topics/do-while-loop/do-while-loop.component';
+import { CContinueComponent } from './pages/clanguage/topics/ccontinue/ccontinue.component';
+import { CBreakStatementComponent } from './pages/clanguage/topics/cbreak-statement/cbreak-statement.component';
+import { CSwitchCaseComponent } from './pages/clanguage/topics/cswitch-case/cswitch-case.component';
+
 
 
 @NgModule({
@@ -68,6 +78,15 @@ import { NewsFeedComponent } from './pages/news-feed/news-feed.component';
     FirstCProgrammingComponent,
     CKeywordsComponent,
     NewsFeedComponent,
+    OperatorPrecedenceComponent,
+    CIfStatementComponent,
+    CIfElseComponent,
+    CForLoopComponent,
+    CWhileLoopComponent,
+    DoWhileLoopComponent,
+    CContinueComponent,
+    CBreakStatementComponent,
+    CSwitchCaseComponent,
   ],
   imports: [
     BrowserModule,
