@@ -42,15 +42,10 @@ const routes: Routes = [
         {path: 'cswitch-case', component: CSwitchCaseComponent},
       ]
 
-<<<<<<< HEAD
-  },
-  {path: 'first-c-program>' ,component: FirstCProgrammingComponent}
-=======
   }
   // {path: 'first-c-program', component: FirstCProgrammingComponent},
   // {path: 'c-keywords', component: CKeywordsComponent},
   // {path: 'turbocpp', component: TurboCppComponent}
->>>>>>> f806581f0b0c09d74c929b1c3d59abf9ecacdb65
 ];
 
 @NgModule({
