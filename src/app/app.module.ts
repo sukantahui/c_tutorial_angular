@@ -54,6 +54,8 @@ import { DoWhileLoopComponent } from './pages/clanguage/topics/do-while-loop/do-
 import { CContinueComponent } from './pages/clanguage/topics/ccontinue/ccontinue.component';
 import { CBreakStatementComponent } from './pages/clanguage/topics/cbreak-statement/cbreak-statement.component';
 import { CSwitchCaseComponent } from './pages/clanguage/topics/cswitch-case/cswitch-case.component';
+import { CGotoStatementComponent } from './pages/clanguage/topics/cgoto-statement/cgoto-statement.component';
+import { CArraysComponent } from './pages/clanguage/topics/carrays/carrays.component';
 
 
 
@@ -87,6 +89,8 @@ import { CSwitchCaseComponent } from './pages/clanguage/topics/cswitch-case/cswi
     CContinueComponent,
     CBreakStatementComponent,
     CSwitchCaseComponent,
+    CGotoStatementComponent,
+    CArraysComponent,
   ],
   imports: [
     BrowserModule,

@@ -16,6 +16,8 @@ import { DoWhileLoopComponent } from './pages/clanguage/topics/do-while-loop/do-
 import { CContinueComponent } from './pages/clanguage/topics/ccontinue/ccontinue.component';
 import { CBreakStatementComponent } from './pages/clanguage/topics/cbreak-statement/cbreak-statement.component';
 import { CSwitchCaseComponent } from './pages/clanguage/topics/cswitch-case/cswitch-case.component';
+import { CGotoStatementComponent } from './pages/clanguage/topics/cgoto-statement/cgoto-statement.component';
+import { CArraysComponent } from './pages/clanguage/topics/carrays/carrays.component';
 
 
 
@@ -28,18 +30,20 @@ const routes: Routes = [
   {path: 'clanguage', component: CLanguageComponent,
       children: [
         {path: '', component: ClanguageHomeComponent, pathMatch: 'full'},
-        {path: 'turbocpp', component: TurboCppComponent},
-        {path: 'first-c-program', component: FirstCProgrammingComponent},
-        {path: 'c-keywords', component: CKeywordsComponent},
-        {path: 'operatorprecedence', component: OperatorPrecedenceComponent},
-        {path: 'cif-statement', component: CIfStatementComponent},
-        {path: 'cif-else', component: CIfElseComponent},
-        {path: 'cfor-loop', component: CForLoopComponent},
-        {path: 'cwhile-loop', component: CWhileLoopComponent},
+        {path: 'turboCpp', component: TurboCppComponent},
+        {path: 'firstCprogram', component: FirstCProgrammingComponent},
+        {path: 'ckeywords', component: CKeywordsComponent},
+        {path: 'operatorPrecedence', component: OperatorPrecedenceComponent},
+        {path: 'cifStatement', component: CIfStatementComponent},
+        {path: 'cifElse', component: CIfElseComponent},
+        {path: 'cforLoop', component: CForLoopComponent},
+        {path: 'cwhileLoop', component: CWhileLoopComponent},
         {path: 'doWhileLoop', component: DoWhileLoopComponent},
         {path: 'ccontinue', component: CContinueComponent},
-        {path: 'cbreak-statement', component: CBreakStatementComponent},
-        {path: 'cswitch-case', component: CSwitchCaseComponent},
+        {path: 'cbreakStatement', component: CBreakStatementComponent},
+        {path: 'cswitchCase', component: CSwitchCaseComponent},
+        {path: 'cgotoStatement', component: CGotoStatementComponent},
+        {path: 'carrys', component: CArraysComponent},
       ]
 
   }

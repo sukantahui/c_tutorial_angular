@@ -1,0 +1,47 @@
+<h1><b>C – goto statement with example</b></h1>
+<p>The goto statement is rarely used because it makes program confusing, less readable and complex. Also, when this is used, the control of the program won’t be easy to trace, hence it makes testing and debugging difficult.</p>
+<h1><b>C – goto statement</b></h1>
+<p>When a goto statement is encountered in a C program, the control jumps directly to the label mentioned in the goto stateemnt</p>
+<b>Syntax of goto statement in C</b>
+<div class="code">
+    <pre>
+        goto label_name;
+        ..
+        ..
+        label_name: C-statements
+    </pre>
+</div>
+<h1><b>Flow Diagram of goto</b></h1>
+<img height="350px" src="assets/image/flowchart3.jfif" alt="">
+<h1><b>Example of goto statement</b></h1>
+<div class="code">
+    <pre>
+        #include < stdio.h>
+            int main()
+            {{'{'}}
+               int sum=0;
+               for(int i = 0; i&lt=10; i++){{'{'}}
+                sum = sum+i;
+                if(i==5){{'{'}}
+                   goto addition;
+                {{'}'}}
+               {{'}'}}
+            
+               addition:
+               printf("%d", sum);
+            
+               return 0;
+            {{'}'}}
+    </pre>
+</div>
+Output:
+<div class="code">
+    <pre>
+        15
+    </pre>
+</div>
+<h3><b>Explanation:</b> In this example, we have a label addition and when the value of i (inside loop) is equal to 5 then we are jumping to this label using goto. This is reason the sum is displaying the sum of numbers till 5 even though the loop is set to run from 0 to 10.</h3>
+<div fxLayout="row" fxLayoutAlign="space-around center" >
+    <div class="50" fxFlex="65" ><a [routerLink]="['/clanguage/cswitch-case']" routerLinkActive="MyActiveMenu"><h2>&lt;Previous</h2></a></div>
+    <div class="50" fxFlex="65" > <a [routerLink]="['/clanguage/cfor-loop']" routerLinkActive="MyActiveMenu"><h2>Next&gt;</h2></a></div>
+</div>
