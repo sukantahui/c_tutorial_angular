@@ -1,1 +1,15 @@
-
+<h1><b>Arrays in C programming with examples</b></h1>
+<p>An array is a group (or collection) of same data types. For example an int array holds the elements of int types while a float array holds the elements of float types.</p>
+<h1><b>Why we need Array in C Programming?</b></h1>
+<p>Consider a scenario where you need to find out the average of 100 integer numbers entered by user. In C, you have two ways to do this: 1) Define 100 variables with int data type and then perform 100 scanf() operations to store the entered values in the variables and then at last calculate the average of them. 2) Have a single integer array to store all the values, loop the array to store all the entered values in array and later calculate the average.</p>
+<p>Which solution is better according to you? Obviously the second solution, it is convenient to store same data types in one single variable and later access them using array index (we will discuss that later in this tutorial).</p>
+<h1><b>How to declare Array in C</b></h1>
+<div class="code">
+    <pre>
+        int num[35];  /* An integer array of 35 elements */
+        char ch[10];  /* An array of characters for 10 elements */
+    </pre>
+</div>
+<h3>Similarly an array can be of any data type such as double, float, short etc.</h3>
+<h1><b>How to access element of an array in C</h1></b>
+<h3>In general arr[n-1] can be used to access nth element of an array. where n is any integer number.</h3>
