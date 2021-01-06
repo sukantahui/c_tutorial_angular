@@ -11,5 +11,101 @@
     </pre>
 </div>
 <h3>Similarly an array can be of any data type such as double, float, short etc.</h3>
-<h1><b>How to access element of an array in C</h1></b>
-<h3>In general arr[n-1] can be used to access nth element of an array. where n is any integer number.</h3>
+<h1><b>How to access element of an array in C</b></h1>
+<h3>You can use <b>array subscript</b> (or index) to access any element stored in array. Subscript starts with 0, which means arr[0] represents the first element in the array arr.</h3>
+In general arr[n-1] can be used to access nth element of an array. where n is any integer number.
+<b>For example:</b>
+<div class="code">
+    <pre>
+        int mydata[20];
+        mydata[0] /* first element of array mydata*/
+        mydata[19] /* last (20th) element of array mydata*/
+    </pre>
+</div>
+<h2><b>Example of Array In C programming to find out the average of 4 integers</b></h2>
+<div class="code">
+    <pre>
+        #include < stdio.h>
+            int main()
+            {{'{'}}
+                int avg = 0;
+                int sum =0;
+                int x=0;
+            
+                /* Array- declaration – length 4*/
+                int num[4];
+            
+                /* We are using a for loop to traverse through the array
+                 * while storing the entered values in the array
+                 */
+                for (x=0; x & lt4;x++)
+                {{'{'}}
+                    printf("Enter number %d \n", (x+1));
+                    scanf("%d", &num[x]);
+                {{'}'}}
+                for (x=0; x & lt4;x++)
+                {{'{'}}
+                    sum = sum+num[x];
+                {{'{'}}
+            
+                avg = sum/4;
+                printf("Average of entered number is: %d", avg);
+                return 0;
+            {{'}'}}
+    </pre>
+</div>
+<b>Output:</b>
+<div class="code">
+    <pre>
+        Enter number 1 
+        10
+        Enter number 2 
+        10
+        Enter number 3 
+        20
+        Enter number 4 
+        40
+    Average of entered number is: 20
+    </pre>
+</div>
+<h2>Lets discuss the important parts of the above program:</h2>
+<h3><b>Input data into the array</b></h3>
+<p>Here we are iterating the array from 0 to 3 because the size of the array is 4. Inside the loop we are displaying a message to the user to enter the values. All the input values are stored in the corresponding array elements using scanf function.</p>
+<div class="code">
+    <pre>
+        for (x=0; x&lt4;x++)
+        {{'{'}}
+            printf("Enter number %d \n", (x+1));
+            scanf("%d", &num[x]);
+        {{'}'}}
+    </pre>
+</div>
+<h2><b>Reading out data from an array</b></h2>
+<h3><p>Suppose, if we want to display the elements of the array then we can use the <a href="https://beginnersbook.com/2014/01/c-for-loop/">for loop in C </a>like this.</p></h3>
+<div class="code">
+    <pre>
+        for (x=0; x&lt4;x++)
+        {{'{'}}
+            printf("num[%d]\n", num[x]);
+        {{'}'}}
+    </pre>
+</div>
+<h2><b>Various ways to initialize an array</b></h2>
+<p>In the above example, we have just declared the array and later we initialized it with the values input by user. However you can also initialize the array during declaration like this:</p>
+<div class="code">
+    <pre>
+        int arr[5] = {{'{'}}1, 2, 3, 4 ,5{{'}'}};
+    </pre>
+</div>
+<h3>OR (both are same)</h3>
+<div class="code">
+    <pre>
+        int arr[] = {{'{'}}1, 2, 3, 4, 5{{'}'}};
+    </pre>
+</div>
+<h3>Un-initialized array always contain garbage values.</h3>
+<h1><b>C Array – Memory representation</b></h1>
+<h4>More Topics on Arrays in C:</h4>
+<a href="https://beginnersbook.com/2014/01/2d-arrays-in-c-example/">2 day arrays</a>– We can have multidimensional arrays in C like 2D and 3D array. However the most popular and frequently used array is 2D – two dimensional array. In this post you will learn how to declare, read and write data in 2D array along with various other features of it.<br><br>
+<a href="https://beginnersbook.com/2014/01/c-passing-array-to-function-example/">Passing an array to a function</a>– Generally we pass values and variables while calling a function, likewise we can also pass arrays to a function. You can pass array’s element as well as whole array (by just specifying the array name, which works as a pointer) to a function.<br><br>
+<a href="https://beginnersbook.com/2014/01/c-pointer-to-array-example/">Pointer to array</a>– Array elements can be accessed and manipulated using pointers in C. Using pointers you can easily handle array. You can have access of all the elements of an array just by assigning the array’s base address to pointer variable.<br><br>
