@@ -18,6 +18,7 @@ import { CBreakStatementComponent } from './pages/clanguage/topics/cbreak-statem
 import { CSwitchCaseComponent } from './pages/clanguage/topics/cswitch-case/cswitch-case.component';
 import { CGotoStatementComponent } from './pages/clanguage/topics/cgoto-statement/cgoto-statement.component';
 import { CArraysComponent } from './pages/clanguage/topics/carrays/carrays.component';
+import { Two } from './pages/clanguage/topics/carrays/carrays.component';
 
 
 
@@ -44,6 +45,7 @@ const routes: Routes = [
         {path: 'cswitchCase', component: CSwitchCaseComponent},
         {path: 'cgotoStatement', component: CGotoStatementComponent},
         {path: 'carrys', component: CArraysComponent},
+        {path: 'tdarray', component: TwoDArrayComponent},
       ]
 
   }

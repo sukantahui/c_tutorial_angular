@@ -56,6 +56,7 @@ import { CBreakStatementComponent } from './pages/clanguage/topics/cbreak-statem
 import { CSwitchCaseComponent } from './pages/clanguage/topics/cswitch-case/cswitch-case.component';
 import { CGotoStatementComponent } from './pages/clanguage/topics/cgoto-statement/cgoto-statement.component';
 import { CArraysComponent } from './pages/clanguage/topics/carrays/carrays.component';
+import { TwoDArrayComponent } from './pages/clanguage/topics/two-darray/two-darray.component';
 
 
 
@@ -91,6 +92,7 @@ import { CArraysComponent } from './pages/clanguage/topics/carrays/carrays.compo
     CSwitchCaseComponent,
     CGotoStatementComponent,
     CArraysComponent,
+    TwoDArrayComponent,
   ],
   imports: [
     BrowserModule,
