@@ -1,1 +1,137 @@
+<h1> <b>Two dimensional (2D) arrays in C programming with example</b></h1>
+<p>An array of arrays is known as 2D array. The two dimensional (2D) array in C programming is also known as matrix. A matrix can be represented as a table of rows and columns. Before we discuss more about two Dimensional array lets have a look at the following C program.</p>
+<h1><b>Simple Two dimensional(2D) Array Example</b></h1>
+<p>For now don’t worry how to initialize a two dimensional array, we will discuss that part later. This program demonstrates how to store the elements entered by user in a 2d array and how to display the elements of a two dimensional array.</p>
+<div class="code">
+    <pre>
+        #include< stdio.h>
+            int main(){{'{'}}
+               /* 2D array declaration*/
+               int disp[2][3];
+               /*Counter variables for the loop*/
+               int i, j;
+               for(i=0; i&lt;2; i++) {{'{'}}
+                  for(j=0;j&lt;3;j++) {{'{'}}
+                     printf("Enter value for disp[%d][%d]:", i, j);
+                     scanf("%d", &disp[i][j]);
+                  {{'}'}}
+               {{'}'}}
+               //Displaying array elements
+               printf("Two Dimensional array elements:\n");
+               for(i=0; i&lt;2; i++) {{'{'}}
+                  for(j=0;j&lt;3;j++) {{'{'}}
+                     printf("%d ", disp[i][j]);
+                     if(j==2){{'{'}}
+                        printf("\n");
+                     {{'}'}}
+                  {{'}'}}
+               {{'}'}}
+               return 0;
+            {{'}'}}
+    </pre>
+</div>
+<h2>Output:</h2>
+<div class="code">
+    <pre>
+        Enter value for disp[0][0]:1
+        Enter value for disp[0][1]:2
+        Enter value for disp[0][2]:3
+        Enter value for disp[1][0]:4
+        Enter value for disp[1][1]:5
+        Enter value for disp[1][2]:6
+        Two Dimensional array elements:
+        1 2 3 
+        4 5 6 
+    </pre>
+</div>
+<h1><b>Initialization of 2D Array</b></h1>
+<p>There are two ways to initialize a two Dimensional arrays during declaration.</p>
+<div class="code">
+    <pre>
+        int disp[2][4] = {{'{'}}
+            {{'{'}}10, 11, 12, 13{{'}'}},
+            {{'{'}}14, 15, 16, 17{{'}'}}
+    {{'}'}};
+    </pre>
+</div>
+<h2>OR</h2>
+<div class="code">
+    <pre>
+        int disp[2][4] = {{'{'}} 10, 11, 12, 13, 14, 15, 16, 17 {{'}'}};
+    </pre>
+</div>
+<p>Although both the above declarations are valid, I recommend you to use the first method as it is more readable, because you can visualize the rows and columns of 2d array in this method.</p>
+<h2><b>Things that you must consider while initializing a 2D array</b></h2>
+<p>We already know, when we initialize a normal array (or you can say one dimensional array) during declaration, we need not to specify the size of it. However that’s not the case with 2D array, you must always specify the second dimension even if you are specifying elements during the declaration. Let’s understand this with the help of few examples –</p>
+<div class="code">
+    <pre>
+        /* Valid declaration*/
+        int abc[2][2] = {{'{'}}1, 2, 3 ,4 {{'}'}}  
+        /* Valid declaration*/ 
+        int abc[][2] = {{'{'}}1, 2, 3 ,4 {{'}'}}  
+        /* Invalid declaration – you must specify second dimension*/
+        int abc[][] = {{'{'}}1, 2, 3 ,4 {{'}'}}   
+        /* Invalid because of the same reason  mentioned above*/
+        int abc[2][] = {{'{'}}1, 2, 3 ,4 {{'}'}}
+    </pre>
+</div>
+<h2><b>How to store user input data into 2D array</b></h2>
+<p>We can calculate how many elements a two dimensional array can have by using this formula:
+The array arr[n1][n2] can have n1*n2 elements. The array that we have in the example below is having the dimensions 5 and 4. These dimensions are known as subscripts. So this array has <b>first subscript</b> value as 5 and second <b>subscript</b> value as 4.
+So the array abc[5][4] can have 5*4 = 20 elements.</p>
+<p>To store the elements entered by user we are using two for loops, one of them is a nested loop. The outer loop runs from 0 to the (first subscript -1) and the inner for loops runs from 0 to the (second subscript -1). This way the the order in which user enters the elements would be abc[0][0], abc[0][1], abc[0][2]…so on.</p>
+<div class="code">
+    <pre>
+        #include< stdio.h>
+            int main(){{'{'}}
+               /* 2D array declaration*/
+               int abc[5][4];
+               /*Counter variables for the loop*/
+               int i, j;
+               for(i=0; i&lt;5; i++) {{'{'}}
+                  for(j=0;j&lt;4;j++) {{'{'}}
+                     printf("Enter value for abc[%d][%d]:", i, j);
+                     scanf("%d", &abc[i][j]);
+                  {{'}'}}
+               {{'}'}}
+               return 0;
+            {{'}'}}
+    </pre>
+</div>
+<p>In above example, I have a 2D array abc of integer type. Conceptually you can visualize the above array like this:</p>
+<div class="code">
+    <table class="table">
+        <tr>
+            <td>abc[0][0]</td>
+            <td>abc[0][1]</td>
+            <td>abc[0][2]</td>
+            <td>abc[0][3]</td>
+        </tr>
+        <tr>
+            <td>abc[1][0]</td>
+            <td>abc[1][1]</td>
+            <td>abc[1][2]</td>
+            <td>abc[1][3]</td>
+        </tr>
+        <tr>
+            <td>abc[2][0]</td>
+            <td>abc[2][1]</td>
+            <td>abc[2][2]</td>
+            <td>abc[2][3]</td>
+        </tr>
+        <tr>
+            <td>abc[3][0]</td>
+            <td>abc[3][1]</td>
+            <td>abc[3][2]</td>
+            <td>abc[3][3]</td>
+        </tr>
+        <tr>
+            <td>abc[4][0]</td>
+            <td>abc[4][1]</td>
+            <td>abc[4][2]</td>
+            <td>abc[4][3]</td>
+        </tr>
+        
 
+    </table>
+</div>
